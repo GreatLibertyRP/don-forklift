@@ -322,9 +322,9 @@ Citizen.CreateThread(function()
         Citizen.Wait(3)
         
         local ped = PlayerPedId()
-        local pos = GetEntityCoords(PlayerPedId(), true)
+        local pos = GetEntityCoords(ped, true)
         
-        if PlayerData.job ~= nil and PlayerData.job.name == 'logistics' then
+        if PlayerData.job ~= nil then
             if #(pos - vector3(Config.Forklift['Forklift'].Pos.x, Config.Forklift['Forklift'].Pos.y, Config.Forklift['Forklift'].Pos.z)) <= 25.0 or #(pos - vector3(Config.Forklift['Jobstart'].Pos.x, Config.Forklift['Jobstart'].Pos.y, Config.Forklift['Jobstart'].Pos.z)) <= 25.0 then
                 DrawMarker(27, Config.Forklift['Forklift'].Pos.x, Config.Forklift['Forklift'].Pos.y, Config.Forklift['Forklift'].Pos.z-1, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 1.0, 143, 235, 77, 100, false, true, 2, false, false, false, false)
                 DrawMarker(27, Config.Forklift['Jobstart'].Pos.x, Config.Forklift['Jobstart'].Pos.y, Config.Forklift['Jobstart'].Pos.z-1, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 1.0, 143, 235, 77, 100, false, true, 2, false, false, false, false)
