@@ -11,18 +11,19 @@ Keys = {
 
 Config = {}
 
-Config.MaxPayout = 22
-Config.MinPayout = 18
+Config.MaxPayout = 100
+Config.MinPayout = 25
 
 Config.Forklift = {
 	['Jobstart'] = { -- the place where you start and finish your work
-		Pos = {x = 1209.77, y = -3259.74, z = 7.08},
+		Pos = {x = 1209.23, y = -3254.67, z = 7.08},
 		Size  = {x = 1.2, y = 1.2, z = 1.0},
 		Color = {r = 78, g = 2453, b = 175},
 		Type  = 25,
 	},
-	['Forklift'] = { -- the place where the company car appears
-		Pos = {x = 1201.55, y = -3287.51, z = 5.5}, 
+	['Forklift'] = { -- the place where the company car appearsvector4(1205.59, -3263.69, 4.97, 179.3)
+		Pos = {x = 1205.59, y = -3263.69, z = 4.97},
+		heding = 179.3,
 		Model  = 'forklift',
 	},
 	['DeliverySpawn'] = { -- the place where the benson spawns
@@ -35,18 +36,18 @@ Config.Forklift = {
 
 Config.Pallet ={
 	['1'] = {
-		Pos = {x = 1190.23, y = -3306.25, z = 5.5},
+		Pos = vector3(1199.6, -3276.31, 5.52)
 	},
 	['2'] = {
-		Pos = {x = 1199.31, y = -3308.33, z = 5.5},
+		Pos = vector3(1199.6, -3276.31, 5.52)
 	},
 	['3'] = {
-		Pos = {x = 1232.87, y = -3294.65, z = 5.5},
+		Pos = vector3(1199.6, -3276.31, 5.52)
 	},
 	['4'] = {
-		Pos = {x = 1191.27, y = -3274.08, z = 5.5},
+		Pos = vector3(1199.6, -3276.31, 5.52)
 	},
 	['5'] = {
-		Pos = {x = 1223.9, y = -3246.72, z = 5.5},
+		Pos = vector3(1199.6, -3276.31, 5.52)
 	}
 }
